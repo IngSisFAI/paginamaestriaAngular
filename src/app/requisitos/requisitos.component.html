@@ -1,0 +1,54 @@
+
+  <div class="col-xs-12 col-md-12 all">
+  <div class="row-xs-12 row-md-12 all2">
+    <!--
+    <h4 class="quienpuede">{{ins3.fondo}}</h4>
+    <h5 class="quienpuede">{{ins3.texto}}</h5> -->
+    <br>
+    <h3 class="req">REQUISITOS:</h3>
+    <br>
+  <div class="col-xs-6 col-sm-6 text info">
+    <ul>
+      <h3 ><li>{{lista1[0].titulo}}</li></h3>
+    </ul>
+    <p align="justify">{{lista1[1].texto}}</p>
+
+    <div class="col-xs-4 col-md-12 botonescentrados">
+      <button type="button" class="btn btn-danger" id="boton" (click)="cambiarBoolean(true)">Mostrar Requisitos</button></div>
+    <div class="col-xs-4 col-md-12" *ngIf="mostrarInfo == true">
+
+    <ul>
+      <li>{{lista1[2].titulo}}</li>
+      <li>{{lista1[3].titulo}}</li>
+      <li>{{lista1[4].titulo}}</li>
+      <li>{{lista1[5].titulo}}</li>
+      <li>{{lista1[6].titulo}}</li>
+      <li>{{lista1[7].titulo}}</li>
+      <li>{{lista1[8].titulo}}</li>
+    </ul>
+  </div>
+  </div>
+  <div class="col-xs-6 col-sm-6 text info">
+
+    <ul>
+      <h3><li>{{lista2[0].titulo}}</li></h3>
+    </ul>
+    <p align="justify">{{lista2[1].texto}}</p>
+  <div class="col-xs-4 col-md-12 botonescentrados">
+    <button  type="button" class=" btn btn-danger boton" id="boton2" (click)="cambiarBoolean2()">Mostrar Requisitos</button></div>
+    <div class=" col-xs-4 col-md-12 " *ngIf="mostrarInfo2 == true">
+
+    <ul>
+      <li>{{lista2[2].titulo}}</li>
+      <li>{{lista2[3].titulo}}</li>
+      <li>{{lista2[4].titulo}}</li>
+      <li>{{lista2[5].titulo}}</li>
+      <li>{{lista2[6].titulo}}</li>
+      <li>{{lista2[7].titulo}}</li>
+      <li>{{lista2[8].titulo}}</li>
+      <li>{{lista2[9].titulo}}</li>
+    </ul>
+    </div>
+  </div>
+  </div>
+</div>

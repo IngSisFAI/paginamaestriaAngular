@@ -1,0 +1,64 @@
+<html>
+<body>
+<div class="row-xs-12 row-sm-8 row-md-12 ">
+  <div class="row-xs-12 row-sm-8 row-md-12 " >
+    <nav id="header" class="col-xs-12 col-md-12 navbar navbar-fixed-top">
+        <div  class="topnav col-xs-12 col-md-12" id="myTopnav">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link subir" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/infogeneral']" >Información</a></li>
+            <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/requisitos']">Requisitos</a></li>
+            <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/cronograma']">Plan de estudio</a></li>
+            <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/form']" >Inscripción</a></li>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+          </a>
+        </div><!-- /.nav-collapse -->
+    </nav><!-- /.navbar -->
+  </div>
+
+  <!-- <nav class="menu navbar navbar-fixed-top navbar-dark navbar navbar-inverse">
+    <div class="container-fluid">
+       <div class="navbar-header">
+
+         <a class="colormenu navbar-brand" href="#">Menú</a>
+       </div> -->
+  <!-- barra de navegacion con router link -->
+  <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link subir" href={{url1}}>Inicio</a></li>
+        <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/infogeneral']" >Información</a></li>
+        <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/requisitos']">Requisitos</a></li>
+        <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/cronograma']">Cronograma</a></li>
+        <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/form']" >Inscripción</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+
+
+  <fondo-fondo></fondo-fondo>
+
+  <titulo-titulo></titulo-titulo>
+
+  <router-outlet> </router-outlet>
+
+  <piepagina-piepagina>  </piepagina-piepagina>
+
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+</body>
+</html>
+

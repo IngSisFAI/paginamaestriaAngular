@@ -1,0 +1,55 @@
+.all{  font-size: 27px;
+  background-color:  #f2f2f2;
+}
+.all2{
+  margin-bottom: 340px;
+  background-color:  #f2f2f2;
+}
+.text{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.req{
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: Norasi, sans-serif;
+}
+.lineaseparadora{
+  border: black;
+  border-style: solid;
+}
+.info{
+  font-family: Norasi, sans-serif;
+  font-size: 18px
+}
+.cupo{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  font-family: Norasi, sans-serif;
+  font-size: 18px ;
+}
+.quienpuede{
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.botonescentrados{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(22, 120, 197);
+}
+#boton:hover {
+  font-family: Norasi, sans-serif;
+  background: rgba(0,0,0,0);
+  color: black;
+  box-shadow: inset 0 0 0 3px red;
+}
+#boton2:hover {
+  font-family: Norasi, sans-serif;
+  background: rgba(0,0,0,0);
+  color: black;
+  box-shadow: inset 0 0 0 3px red;
+}

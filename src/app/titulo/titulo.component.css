@@ -1,0 +1,69 @@
+.fondo{
+  background-color: #f2f2f2;
+}
+
+.bigicon {
+  font-size: 20px;
+  color: #36A0FF;
+}
+
+.btn{
+  margin: 2px;
+}
+
+.colorNombre{
+  color: white;
+}
+
+.tit2{
+  margin-left: 30px;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  font-family: Norasi, sans-serif;
+  text-decoration: underline;
+}
+
+.txt1{
+  font-family: Norasi, sans-serif;
+  margin-left: 60px;
+  margin-right: 30px;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+  font-size:24px;
+}
+.ctn{
+  top: 10px;
+  bottom: 85px;
+  width: 350px;
+  height: 500px;
+  margin-left: 5px;
+}
+.ctn2{
+  background-color:  rgb(246, 247, 234);
+}
+.ctn1{
+  border: 2px solid;
+}
+
+.textinfo{
+  font-family: Norasi, sans-serif;
+  font-size: 27px;
+}
+.formu{
+  margin-left: 10px;
+}
+h1 {
+  color: rgba(0,0,0,.7);
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

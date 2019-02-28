@@ -1,0 +1,91 @@
+body{
+  background-color:  #f2f2f2;
+}
+
+.tituloformulario{
+  background-color: #2586d7;
+
+}
+.tituloinscripcion{
+  font-size: 30px;
+  color: white;
+}
+.logo{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.bordeado{
+  margin-top: 15px;
+}
+
+.sixteen.columns.top-1.bottom-3.bordeado > p {
+  color: red;
+}
+
+.container.clearfix > p {
+  margin-bottom: 20px;
+}
+
+.one-third.column.widget > img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.one-third.column.widget > p {
+  margin-bottom: 10px;
+}
+
+.one-third.column.widget > img {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.one-third.column.widget > p {
+  margin-bottom: 10px;
+}
+
+.one-third.column.widget > img {
+  float: left;
+  margin-right: 15px;
+}
+
+.one-third.column.widget > img {
+  float: left;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.one-third.column.widget > p {
+  margin-top: 2px;
+}
+
+.copyright > a {
+  color: white;
+}
+
+.copyright > a {
+  color: white;
+}
+
+.copyright > a {
+  color: white;
+}
+.uno{
+  margin-top: 10px;
+}
+.dos{
+  margin-top: -7px;
+}
+
+.botonenviar{
+  margin-bottom: 5px;
+  height: 20px;
+  padding-bottom: 29px;
+}
+
+.captcha{
+  margin-left: 164px;
+  bottom: 10px;
+}

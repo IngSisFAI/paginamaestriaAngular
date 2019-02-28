@@ -1,0 +1,57 @@
+.fondo{
+  background-image: url('../../assets/fotos/recortado.png');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+  padding-right: 50px;
+  padding-top: 60px;
+  height: 580px;
+}
+.bigicon {
+  font-size: 20px;
+  color: #36A0FF;
+}
+
+.btn{
+  margin: 2px;
+}
+.colorNombre{
+  color: white;
+}
+
+
+.tit1{
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 45px;
+  font-family:Georgia,Time,serif;
+  font-size: 55px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.tit2{
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: Georgia,Times,serif;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.logos{
+  margin-top: 45px;
+  text-align: center;
+}
+.unco{
+  margin-top: 20px;
+  text-align: center;
+}
+.icono{
+  margin-top: 30px;
+}
+

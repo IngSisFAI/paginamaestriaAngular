@@ -1,0 +1,61 @@
+<body>
+<div class="row-xs-12 row-sm-12 row-md-12   fondo">
+
+  <div class="col-xs-12 col-sm-8 col-md-8 ">
+    <h2 class="tit2">{{titulo2}}</h2>
+    <h3 class="txt1" align="justify">{{texto}}</h3>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4  ctn">
+      <div class="well well-sm ctn1">
+        <form class="form-horizontal ctn2" (ngSubmit)="contactForm(form.value)" #form="ngForm" >
+          <fieldset>
+            <legend class="text-center header textinfo">Solicitá información </legend>
+
+            <div class="form-group formu">
+              <span class="col-md-1 col-md-offset-1 text-center"><i class="glyphicon glyphicon-user bigicon"></i></span>
+              <div class="col-md-11">
+                <input id="nombre" type="text" placeholder="*Nombre" class="form-control" required ngModel name="nombre" >
+              </div>
+            </div>
+
+            <div class="form-group formu">
+              <span class="col-md-1 col-md-offset-1 text-center"><i class="glyphicon glyphicon-user bigicon"></i></span>
+              <div class="col-md-11">
+                <input id="apellido"  type="text" placeholder="*Apellido" class="form-control" required ngModel name="apellido" >
+              </div>
+            </div>
+
+            <div class="form-group formu">
+              <span class="col-md-1 col-md-offset-1 text-center"><i class="	glyphicon glyphicon-envelope bigicon"></i></span>
+              <div class="col-md-11">
+                <input id="email" type="email" placeholder="*Email" class="form-control" required  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="25"  ngModel name="email">
+              </div>
+            </div>
+
+            <div class="form-group formu">
+              <span class="col-md-1 col-md-offset-1 text-center"><i class="glyphicon glyphicon-file bigicon"></i></span>
+              <div class="col-md-11">
+                <textarea class="form-control " id="mensaje" rows="3" placeholder="*Mensaje" ngModel name="mensaje" required></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-info btn-lg" [disabled]="!form.valid" (click)="guardar(form.value)">Quiero saber más</button>
+
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="alert alert-danger" role="alert" id="error" style="display:none"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>

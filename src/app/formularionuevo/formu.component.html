@@ -1,0 +1,227 @@
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<header class="style-3 ">
+  <div class="top-bar"></div>
+  <div class="main-header">
+    <div class="container clearfix">
+      <div class="eleven columns">
+        <!-- logo de la unco -->
+        <div class="logo"> <a href="https://www.uncoma.edu.ar/"> <img src="{{fotoRuta}}{{logounco}}" alt="Universidad del Comahue" title="Universidad del Comahue" style="width:120px;"> </a></div>
+      </div>
+    </div>
+  </div>
+  <div class="page-title tituloformulario">
+    <div class="container clearfix ">
+      <div class="sixteen columns">
+        <h1 class="tituloinscripcion">Formulario de inscripción</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- comienzo del formulario -->
+
+<div class="container">
+
+  <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+
+      <div class="panel-heading">
+        <div class="panel-title"></div>
+        <div style="float:right; font-size: 85%; position: relative; top: 10px"></div>
+      </div>
+
+      <div class="panel-body" >
+
+          <form id="formulario" class="form-horizontal" method="post" (ngSubmit)="contactForm(form.value)" #form="ngForm"  >
+
+            <div class="form-group ">
+              <label for="nombre" class="control-label col-md-4 "> Nombre<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input type="text" class="form-control"  placeholder="Ingrese su nombre" id="nombre" required  ngModel name="nombre"  #nombre="ngModel">
+
+                <div [hidden]="nombre.valid || nombre.pristine"
+                     class="alert alert-danger uno">
+                  Nombre es requerido
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group ">
+              <label for="apellido" class="control-label col-md-4  "> Apellido<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md  textInput form-control" id="apellido" placeholder="Ingrese su apellido" style="margin-bottom: 10px" type="text" required ngModel name="apellido"
+                       #apellido="ngModel"/>
+                <div [hidden]="apellido.valid || apellido.pristine"
+                     class="alert alert-danger">
+                  Apellido es requerido
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group ">
+              <label for="email" class="control-label col-md-4  "> Email<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md emailinput form-control" placeholder="Ingrese su email" style="margin-bottom: 10px" type="email" required
+                       pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ngModel name="email" id="email"
+                       #email="ngModel">
+                <div [hidden]="email.valid || email.pristine"
+                     class="alert alert-danger">
+                  Email es requerido
+                </div>
+              </div>
+            </div>
+
+
+            <div  class="form-group ">
+              <label for="doc" class="control-label col-md-4  "> Documento<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md emailinput form-control" minlength="8" placeholder="Ingrese su documento" style="margin-bottom: 10px" type="text" required pattern="[0-9]+"
+                       ngModel name="doc" id="doc"
+                       #doc="ngModel"/>
+                <div [hidden]="doc.valid || doc.pristine"
+                     class="alert alert-danger">
+                  Dni es incorrecto
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group ">
+              <label for="genero"  class="control-label col-md-4 "> Género<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 "  style="margin-bottom: 10px">
+                <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_1" value="M"  style="margin-bottom: 10px" required ngModel >Masculino</label>
+                <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_2" value="F"  style="margin-bottom: 10px" required ngModel >Femenino </label>
+              </div>
+            </div>
+
+
+            <div class="form-group ">
+              <label for="numero" class="control-label col-md-4  "> Número de contacto<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md textInput form-control " placeholder="Ingrese su número" style="margin-bottom: 10px" type="text" required pattern="[0-9]+"
+                       ngModel name="numero" id="numero"
+                       #numero="ngModel"/>
+                <div [hidden]="numero.valid || numero.pristine"
+                     class="alert alert-danger">
+                  Número es requerido
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group ">
+              <label for="locacion" class="control-label col-md-4 "> Nacionalidad <span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+
+                <select name="nacionalidad" class="form-control nacionalidad" id="nacionalidad" required ngModel
+                        #nacio="ngModel">
+                  <option value="" selected="">Elige una opción</option>
+                  <option title="Argentina" value="ARG">Argentina</option>
+                  <option title="Boliviana" value="BOL">Boliviana</option>
+                  <option title="Brasileña" value="BRA">Brasileña</option>
+                  <option title="Chilena" value="CHL">Chilena</option>
+                  <option title="Colombiana" value="COL">Colombiana</option>
+                  <option title="Ecuatoriana" value="ECU">Ecuatoriana</option>
+                  <option title="Paraguaya" value="PRY">Paraguaya</option>
+                  <option title="Peruana" value="PER">Peruana</option>
+                  <option title="Uruguaya" value="URY">Uruguaya</option>
+                  <option title="Venezolana" value="VEN">Venezolana</option>
+                  <option title="Alemana" value="DEU">Alemana</option>
+                  <option title="Armenia" value="ARM">Armenia</option>
+                  <option title="Australiana" value="AUS">Australiana</option>
+                  <option title="Austríaca" value="AUT">Austríaca</option>
+                  <option title="Belga" value="BEL">Belga</option>
+                  <option title="Canadiense" value="CAN">Canadiense</option>
+                  <option title="Centroafricana" value="CAF">Centroafricana</option>
+                  <option title="China" value="CHN">China</option>
+                  <option title="Coreana" value="KOR">Coreana</option>
+                  <option title="Costarricense" value="CRI">Costarricense</option>
+                  <option title="Croata" value="HRV">Croata</option>
+                  <option title="Cubana" value="CUB">Cubana</option>
+                  <option title="Danesa/dinamarquesa" value="DNK">Danesa/dinamarquesa</option>
+                  <option title="Dominicana" value="DOM">Dominicana</option>
+                  <option title="Egipcia" value="EGY">Egipcia</option>
+                  <option title="Española" value="ESP">Española</option>
+                  <option title="Estadounidense" value="USA">Estadounidense</option>
+                  <option title="Filipina" value="PHL">Filipina</option>
+                  <option title="Finlandesa" value="FIN">Finlandesa</option>
+                  <option title="Francesa" value="FRA">Francesa</option>
+                  <option title="Guatemalteca" value="GTM">Guatemalteca</option>
+                  <option title="Guyanesa" value="GUF">Guyanesa</option>
+                  <option title="Hondureña" value="HND">Hondureña</option>
+                  <option title="Italiana" value="ITA">Italiana</option>
+                  <option title="Jamaiquina" value="JAM">Jamaiquina</option>
+                  <option title="Japonesa" value="JPN">Japonesa</option>
+                  <option title="Mexicana" value="MEX">Mexicana</option>
+                  <option title="Puerto Rico" value="PRI">Puerto Rico</option>
+                  <option title="Reino Unido" value="GBR">Reino Unido</option>
+                  <option title="Rusa" value="RUS">Rusa</option>
+                  <option title="Salvadoreña" value="SLV">Salvadoreña</option>
+                  <option title="Sudafricana" value="ZAF">Sudafricana</option>
+                </select>
+                <br>
+                <div [hidden]="nacio.valid || nacio.pristine"
+                     class="alert alert-danger dos">
+                  Nacionalidad es requerida
+                </div>
+              </div>
+            </div>
+
+            <!-- captcha -->
+
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6LfAPJEUAAAAABEInWn9KvjgWqSi20GdmAzbQ42I"></div>
+            </div>
+
+              <div  style="float: right; margin-right: 107px;">
+
+                <!-- boton enviar -->
+              <button [disabled]="!form.valid"
+                      class="btn btn-success col-md-5  botonenviar"
+                      type="submit">Enviar</button>
+
+              <button type="reset" class="btn btn-warning col-md-8 " >Nueva inscripción</button>
+
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('formulario').addEventListener('submit', submitForm);
+
+  function submitForm(e){
+    e.preventDefault();
+
+    const nombre = document.querySelector('#nombre').value;
+    const apellido = document.querySelector('#apellido').value;
+    const email = document.querySelector('#email').value;
+    const doc = document.querySelector('#doc').value;
+    const num = document.querySelector('#numero').value;
+    const nacion = document.querySelector('#nacionalidad').value;
+
+    const captcha = document.querySelector('#g-recaptcha-response').value;
+
+    fetch('/subscribe', {
+      method:'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-type':'application/json'
+      },
+      body:JSON.stringify({nombre:nombre, apellido: apellido, email: email, doc: doc, num: numero, nacion: nacionalidad,captcha: captcha})
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        alert(data.msg);
+      });
+  }
+</script>
+
+</body>
+</html>
