@@ -46,14 +46,14 @@ export class requisitos {
     this.mostrarInfo2 = false;
 
   }
-  cambiarBoolean() {
+  cambiarBoolean(valor) {
     if (this.mostrarInfo == true) {
       this.mostrarInfo = false;
     } else {
       this.mostrarInfo = true;
     }
   }
-  cambiarBoolean2() {
+  cambiarBoolean2(valor) {
     if (this.mostrarInfo2 == true) {
       this.mostrarInfo2 = false;
     } else {
