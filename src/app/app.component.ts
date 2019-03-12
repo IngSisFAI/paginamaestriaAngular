@@ -31,84 +31,82 @@ public ngOnInit() {
 
   $('.bajar').click(function() {
     $('html, body').animate({
-      scrollTop: 1010
+      scrollTop: 1200
     }, 1000);
     return false;
   });
+}
+}
 
 
-  $(document).ready(function() {
-    const myNavBar = {
+$(document).ready(function() {
+  const myNavBar = {
 
-      flagAdd: true,
+    flagAdd: true,
 
-      elements: [],
+    elements: [],
 
-      init: function (elements) {
-        this.elements = elements;
-      },
+    init: function (elements) {
+      this.elements = elements;
+    },
 
-      add : function() {
-        if (this.flagAdd) {
-          for (let i = 0; i < this.elements.length; i++) {
-            document.getElementById(this.elements[i]).className += ' fixed-theme';
-          }
-          this.flagAdd = false;
-        }
-      },
-
-      remove: function() {
+    add: function () {
+      if (this.flagAdd) {
         for (let i = 0; i < this.elements.length; i++) {
-          document.getElementById(this.elements[i]).className =
-            document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+          document.getElementById(this.elements[i]).className += ' fixed-theme';
         }
-        this.flagAdd = true;
+        this.flagAdd = false;
       }
+    },
 
-    };
-
-    /**
-     * Init the object. Pass the object the array of elements
-     * that we want to change when the scroll goes down
-     */
-    myNavBar.init(  [
-      'header',
-      'header-container',
-      'brand'
-    ]);
-
-    /**
-     * Function that manage the direction
-     * of the scroll
-     */
-    function offSetManager() {
-
-      const yOffset = 0;
-      const currYOffSet = window.pageYOffset;
-
-      if (yOffset < currYOffSet) {
-        myNavBar.add();
-      } else if (currYOffSet == yOffset) {
-        myNavBar.remove();
+    remove: function () {
+      for (let i = 0; i < this.elements.length; i++) {
+        document.getElementById(this.elements[i]).className =
+            document.getElementById(this.elements[i]).className.replace(/(?:^|\s)fixed-theme(?!\S)/g, '');
       }
-
+      this.flagAdd = true;
     }
 
-    /**
-     * bind to the document scroll detection
-     */
-    window.onscroll = function(e) {
-      offSetManager();
-    };
+  };
+  /**
+   * Init the object. Pass the object the array of elements
+   * that we want to change when the scroll goes down
+   */
+  myNavBar.init([
+    'header',
+    'header-container',
+    'brand'
+  ]);
 
-    /**
-     * We have to do a first detectation of offset because the page
-     * could be load with scroll down set.
-     */
+  /**
+   * Function that manage the direction
+   * of the scroll
+   */
+  function offSetManager() {
+
+    const yOffset = 0;
+    const currYOffSet = window.pageYOffset;
+
+    if (yOffset < currYOffSet) {
+      myNavBar.add();
+    } else if (currYOffSet == yOffset) {
+      myNavBar.remove();
+    }
+
+  }
+
+  /**
+   * bind to the document scroll detection
+   */
+   window.onscroll = function(e) {
     offSetManager();
-  });
-}
+  };
+  /**
+   * We have to do a first detectation of offset because the page
+   * could be load with scroll down set.
+   */
+   offSetManager();
+   });
 
 
-}
 

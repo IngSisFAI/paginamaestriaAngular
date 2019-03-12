@@ -1,10 +1,18 @@
 .all{
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
   background-color: #f2f2f2;
   font-family: "DejaVu Serif", sans-serif ;
   font-size: medium;
+  margin-bottom: 20px;
+
+}
+.titulocrono{
+  background-color: #2586d7;
+}
+.titulocrono2{
+  font-size: 30px;
+  color: white;
+}
+.container.clearfix > p {
   margin-bottom: 20px;
 }
 .contenido{
@@ -25,3 +33,15 @@ background-color: lightgray;
 .linkdescarga{
   font-size: 18px;
 }
+/*
+@media screen and (max-width: 600px){
+  .tabla{
+    transform: scale(0.85);
+  }
+}
+@media screen and (max-width: 1000px){
+  .tabla{
+    transform: scale(0.90);
+  }
+}
+*/

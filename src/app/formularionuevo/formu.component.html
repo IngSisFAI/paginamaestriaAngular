@@ -1,21 +1,14 @@
+<!doctype html>
 <html>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <header class="style-3 ">
-  <div class="top-bar"></div>
-  <div class="main-header">
-    <div class="container clearfix">
-      <div class="eleven columns">
-        <!-- logo de la unco -->
-        <div class="logo"> <a href="https://www.uncoma.edu.ar/"> <img src="{{fotoRuta}}{{logounco}}" alt="Universidad del Comahue" title="Universidad del Comahue" style="width:120px;"> </a></div>
-      </div>
-    </div>
-  </div>
+
   <div class="page-title tituloformulario">
     <div class="container clearfix ">
       <div class="sixteen columns">
-        <h1 class="tituloinscripcion">Formulario de inscripción</h1>
+        <h1 class="tituloinscripcion" align="center">Formulario de pre inscripción</h1>
       </div>
     </div>
   </div>
@@ -35,11 +28,11 @@
 
       <div class="panel-body" >
 
-          <form id="formulario" class="form-horizontal" method="post" (ngSubmit)="contactForm(form.value)" #form="ngForm"  >
+          <form id="formulario" class="form-horizontal" method="post" (ngSubmit)=contactForm(form.value) #form="ngForm" >
 
             <div class="form-group ">
-              <label for="nombre" class="control-label col-md-4 "> Nombre<span class="asteriskField">*</span> </label>
-              <div class="controls col-md-8 ">
+              <label for="nombre" class="control-label col-md-4" > Nombre<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8" >
                 <input type="text" class="form-control"  placeholder="Ingrese su nombre" id="nombre" required  ngModel name="nombre"  #nombre="ngModel">
 
                 <div [hidden]="nombre.valid || nombre.pristine"
@@ -79,9 +72,9 @@
             <div  class="form-group ">
               <label for="doc" class="control-label col-md-4  "> Documento<span class="asteriskField">*</span> </label>
               <div class="controls col-md-8 ">
-                <input class="input-md emailinput form-control" minlength="8" placeholder="Ingrese su documento" style="margin-bottom: 10px" type="text" required pattern="[0-9]+"
+                <input class="input-md textInput form-control" minlength="8" placeholder="Ingrese su documento" style="margin-bottom: 10px" type="text" required pattern="[0-9]+"
                        ngModel name="doc" id="doc"
-                       #doc="ngModel"/>
+                       #doc="ngModel">
                 <div [hidden]="doc.valid || doc.pristine"
                      class="alert alert-danger">
                   Dni es incorrecto
@@ -91,20 +84,21 @@
 
 
             <div class="form-group ">
-              <label for="genero"  class="control-label col-md-4 "> Género<span class="asteriskField">*</span> </label>
-              <div class="controls col-md-8 "  style="margin-bottom: 10px">
-                <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_1" value="M"  style="margin-bottom: 10px" required ngModel >Masculino</label>
-                <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_2" value="F"  style="margin-bottom: 10px" required ngModel >Femenino </label>
+              <label for="genero" class="control-label col-md-4 "> Género<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 " style="margin-bottom: 10px">
+                <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_1" value="M"
+                                                    style="margin-bottom: 10px" required ngModel>Masculino</label>
+                <label class="radio-inline"> <input type="radio" name="gender" id="id_gender_2" value="F"
+                                                    style="margin-bottom: 10px" required ngModel>Femenino </label>
               </div>
-            </div>
 
-
-            <div class="form-group ">
-              <label for="numero" class="control-label col-md-4  "> Número de contacto<span class="asteriskField">*</span> </label>
+              <label for="numero" class="control-label col-md-4  "> Número de contacto<span
+                      class="asteriskField">*</span> </label>
               <div class="controls col-md-8 ">
-                <input class="input-md textInput form-control " placeholder="Ingrese su número" style="margin-bottom: 10px" type="text" required pattern="[0-9]+"
+                <input class="input-md textInput form-control " placeholder="Ingrese su número"
+                       style="margin-bottom: 10px" type="text" required pattern="[0-9]+"
                        ngModel name="numero" id="numero"
-                       #numero="ngModel"/>
+                       #numero="ngModel">
                 <div [hidden]="numero.valid || numero.pristine"
                      class="alert alert-danger">
                   Número es requerido
@@ -113,7 +107,7 @@
             </div>
 
             <div class="form-group ">
-              <label for="locacion" class="control-label col-md-4 "> Nacionalidad <span class="asteriskField">*</span> </label>
+              <label for="locacion" class="control-label col-md-4 "> Nacionalidad<span class="asteriskField">*</span> </label>
               <div class="controls col-md-8 ">
 
                 <select name="nacionalidad" class="form-control nacionalidad" id="nacionalidad" required ngModel
@@ -170,6 +164,31 @@
               </div>
             </div>
 
+
+            <div class="form-group ">
+              <label for="carrera" class="control-label col-md-4  "> Nombre de su carrera<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md  textInput form-control" id="car" placeholder="Ingrese su carrera" style="margin-bottom: 10px" type="text" required ngModel name="carrera"
+                       #carrera="ngModel"/>
+                <div [hidden]="carrera.valid || carrera.pristine"
+                     class="alert alert-danger">
+                  Carrera es requerida
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group ">
+              <label for="universidad" class="control-label col-md-4  "> Nombre de su universidad<span class="asteriskField">*</span> </label>
+              <div class="controls col-md-8 ">
+                <input class="input-md  textInput form-control" id="uni" placeholder="Ingrese su universidad" style="margin-bottom: 10px" type="text" required ngModel name="universidad"
+                       #universidad="ngModel"/>
+                <div [hidden]="universidad.valid || universidad.pristine"
+                     class="alert alert-danger">
+                  Universidad es requerida
+                </div>
+              </div>
+            </div>
+
             <!-- captcha -->
 
             <div class="form-group">
@@ -180,10 +199,10 @@
 
                 <!-- boton enviar -->
               <button [disabled]="!form.valid"
-                      class="btn btn-success col-md-5  botonenviar"
+                      class="btn btn-success col-xs-5 col-md-5  botonenviar"
                       type="submit">Enviar</button>
 
-              <button type="reset" class="btn btn-warning col-md-8 " >Nueva inscripción</button>
+              <button type="reset" class="btn btn-warning col-xs-8 col-md-8 "> Nueva inscripción</button>
 
               </div>
           </form>

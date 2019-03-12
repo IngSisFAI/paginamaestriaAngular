@@ -4,7 +4,6 @@ body{
 
 .tituloformulario{
   background-color: #2586d7;
-
 }
 .tituloinscripcion{
   font-size: 30px;
@@ -16,10 +15,6 @@ body{
 }
 .bordeado{
   margin-top: 15px;
-}
-
-.sixteen.columns.top-1.bottom-3.bordeado > p {
-  color: red;
 }
 
 .container.clearfix > p {
@@ -88,4 +83,10 @@ body{
 .captcha{
   margin-left: 164px;
   bottom: 10px;
+}
+
+@media screen and (max-width: 600px){
+  #sigupbox{
+    transform: scale(0.82);
+  }
 }

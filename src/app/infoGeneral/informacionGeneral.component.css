@@ -8,6 +8,17 @@
   font-size: medium;
 }
 
+.tituloinfo{
+  background-color: #2586d7;
+}
+.tituloinfo2{
+  font-size: 30px;
+  color: white;
+}
+.container.clearfix > p {
+  margin-bottom: 20px;
+}
+
 .logo-small {
   color: blue;
   font-size: 40px;
@@ -40,6 +51,18 @@
   font-size: 21px;
 }
 
-.ultimo{
-  margin-left: 285px;
+
+
+
+@media screen and (max-width: 600px) {
+  .ultimo{
+    margin-left: 70px;
+  }
 }
+/*
+@media screen and (max-width: 1000px) {
+  .ultimo{
+    margin-left: 170px;
+  }
+}
+*/

@@ -1,12 +1,14 @@
-
+<header class="style-3">
+  <div class="page-title titulorequi">
+    <div class="container clearfix ">
+      <div class="sixteen columns">
+        <h1 class="titulorequi2" align="center">Requisitos</h1>
+      </div>
+    </div>
+  </div>
+</header>
   <div class="col-xs-12 col-md-12 all">
   <div class="row-xs-12 row-md-12 all2">
-    <!--
-    <h4 class="quienpuede">{{ins3.fondo}}</h4>
-    <h5 class="quienpuede">{{ins3.texto}}</h5> -->
-    <br>
-    <h3 class="req">REQUISITOS:</h3>
-    <br>
   <div class="col-xs-6 col-sm-6 text info">
     <ul>
       <h3 ><li>{{lista1[0].titulo}}</li></h3>
@@ -14,7 +16,7 @@
     <p align="justify">{{lista1[1].texto}}</p>
 
     <div class="col-xs-4 col-md-12 botonescentrados">
-      <button type="button" class="btn btn-danger" id="boton" (click)="cambiarBoolean(true)">Mostrar Requisitos</button></div>
+      <button type="button" class="btn btn-danger" id="boton" (click)="cambiarBoolean()">Mostrar Requisitos</button></div>
     <div class="col-xs-4 col-md-12" *ngIf="mostrarInfo == true">
 
     <ul>

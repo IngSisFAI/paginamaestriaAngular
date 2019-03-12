@@ -14,21 +14,27 @@ export class titulo {
 
   public titulo2: string;
   public texto: string;
+  public texto2: string
+  public texto3: string;
+  public texto4: string;
+  public texto5: string;
+  public texto6: string;
   public fotoRuta: string;
   public logounco: string;
   public logofai: string;
   public fotounco: string;
+  public link1: string;
+  public link2: string;
+  public link3: string;
+  public link4: string;
 
   constructor(public _MessageService: MessageService) {
     this.fotoRuta = config.rutaFotos;
-
+    this.link1 = 'Ordenanza 890/1 CS UNComa';
+    this.link2 = 'Resolución N° 1168/97';
+    this.link3 = 'Ordenanza CS N° 510/11';
+    this.link4  = 'Resolución Ministerial Nº 786/09';
     this.titulo2 = 'Maestría en Ciencias de la Computación';
-    this.texto =
-      'El carácter de la Maestría en Ciencias de la Computación es amplio y no está limitado\n' +
-      'al marco de un área de la Informática en particular. Tendrá como orientaciones iniciales aquellas ' +
-      'que derivan de las áreas específicas de la disciplina Informática según la Resolución Ministerial nº 786/09: Teoría de la' +
-      ' Computación; Arquitectura, Sistemas Operativos y Redes; Ingeniería de Software, Bases de Datos y Sistemas de Información; y ' +
-      'Algoritmos y Lenguajes.';
     this.logounco = 'logounco.png';
     this.logofai = 'logofaisinfondo.png';
     this.fotounco = 'fotofacu.png';

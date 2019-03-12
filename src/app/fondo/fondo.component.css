@@ -26,7 +26,7 @@
   margin-left: 30px;
   margin-top: 45px;
   font-family:Georgia,Time,serif;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: bolder;
   color: white;
   text-shadow: 1px 1px black;
@@ -47,11 +47,51 @@
   margin-top: 45px;
   text-align: center;
 }
-.unco{
+.logounco{
+  width: 180px;
+  max-width:100%;
   margin-top: 20px;
   text-align: center;
 }
-.icono{
+.logofai{
+  width: 190px;
+  max-width:100%;
   margin-top: 30px;
 }
+/*
+@media only screen and (max-width: 800px) {
+  .tit1, .tit2{ font-size: 40px;
+   margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+.fondo{
+    height: 600px
+}
+}
 
+@media only screen and (max-width: 1000px) {
+  .tit1, .tit2{ font-size: 45px;
+    margin-top: 50px;
+  }
+  .logos{
+    margin-top: 130px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .fondo{
+    height: 800px
+  }
+}
+*/
+@media only screen and (max-width: 600px) {
+  .fondo{
+    height: 720px;
+  }
+  .tit1, .tit2{ font-size: 40px;
+    margin-top: 50px;
+  }
+  .logos{
+    margin-top: 130px;
+  }
+}

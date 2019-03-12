@@ -23,7 +23,7 @@ export class infoG {
   public texto7: string;
   constructor(){
 
-    this.subtitulo1 = '¿QUÉ TÍTULO EXPIDE?';
+    this.subtitulo1 = '¿Qué título expide?';
     this.texto2 = 'La carrera de Maestría en Ciencias de la Computación conduce al otorgamiento del\n' +
       'título de Magíster en Ciencias de la Computación. ';
     this.subtitulo2 = '¿QUÉ OBJETIVOS TIENE?';

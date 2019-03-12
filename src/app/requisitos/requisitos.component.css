@@ -5,6 +5,17 @@
   margin-bottom: 340px;
   background-color:  #f2f2f2;
 }
+
+.titulorequi{
+  background-color: #2586d7;
+}
+.titulorequi2{
+  font-size: 30px;
+  color: white;
+}
+.container.clearfix > p {
+  margin-bottom: 20px;
+}
 .text{
   padding-left: 50px;
   padding-right: 50px;
