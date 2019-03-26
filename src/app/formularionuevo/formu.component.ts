@@ -25,7 +25,7 @@ export class formu2 {
   public resolved(captchaResponse: string) {
     alert(`Resolved captcha with response ${captchaResponse}:`);
   }
-
+/* mensaje de enviado correctamente */
   contactForm(form) {
     this._MessageService.sendMessage(form).subscribe(() => {
     });

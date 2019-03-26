@@ -15,11 +15,22 @@ export class AppComponent implements OnInit {
 
 constructor() {
   this.rutaMenu = config.rutaInfo;
+  console.log('estoy en constructor de app.component.ts');
 }
+    scrollTOElement = (element, offsetParam?, speedParam?) => {
+        const toElement = $(element);
+        const focusElement = $(element);
+        const offset = offsetParam * 1 || 200;
+        const speed = speedParam * 1 || 500;
+        $('html, body').animate({
+            scrollTop: toElement.offset().top + offset
+        }, speed);
+        if (focusElement) {
+            $(focusElement).focus();
+        }
+    }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
-  }
+ /* scroll del menu para que baje hasta cierto valor entero */
 public ngOnInit() {
 
   $('.subir').click(function() {
@@ -31,13 +42,13 @@ public ngOnInit() {
 
   $('.bajar').click(function() {
     $('html, body').animate({
-      scrollTop: 1200
+      scrollTop: 950
     }, 1000);
     return false;
   });
 }
 }
-
+/* funcion que hace andar el cambio del menu de transparente a fondo negro */
 
 $(document).ready(function() {
   const myNavBar = {

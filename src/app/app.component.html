@@ -1,21 +1,36 @@
+<!doctype html>
 <html>
 <body>
+<!--
+<nav>
+  <ul class="container ul-reset">
+    <li><a class=" subir" href="#">Inicio</a></li>
+    <li><a  (click)="scrollTOElement('#elementTo',548,1000)"  [routerLink]="['/infogeneral']" >Información</a></li>
+    <li><a class=" bajar" [routerLink]="['/requisitos']">Requisitos</a></li>
+    <li><a class=" bajar" [routerLink]="['/cronograma']">Plan de estudio</a></li>
+    <li><a class=" bajar" [routerLink]="['/arancel']"> Aranceles</a> </li>
+    <li><a class=" bajar" [routerLink]="['/form']" >Inscripción</a></li>
+  </ul>
+</nav>
+-->
+
 <div class="row-xs-12 row-sm-8 row-md-12 ">
   <div class="row-xs-12 row-sm-8 row-md-12 " >
     <nav id="header" class="col-xs-12 col-md-12 navbar navbar-fixed-top">
         <div  class="topnav col-xs-12 col-md-12" id="myTopnav">
           <ul class="nav navbar-nav">
             <li class="nav-item"><a class="nav-link subir" href="#">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/infogeneral']" >Información</a></li>
+            <li class="nav-item"><a class="nav-link " (click)="scrollTOElement('#elementTo',370,1000)"  [routerLink]="['/infogeneral']" >Información</a></li>
             <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/requisitos']">Requisitos</a></li>
             <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/cronograma']">Plan de estudio</a></li>
+            <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/arancel']"> Aranceles</a> </li>
             <li class="nav-item"><a class="nav-link bajar" [routerLink]="['/form']" >Inscripción</a></li>
           </ul>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction('topnav')">
 
           </a>
-        </div><!-- /.nav-collapse -->
-    </nav><!-- /.navbar -->
+        </div>
+    </nav>
   </div>
 
   <!-- <nav class="menu navbar navbar-fixed-top navbar-dark navbar navbar-inverse">
@@ -44,21 +59,11 @@
 
   <titulo-titulo></titulo-titulo>
 
-  <router-outlet> </router-outlet>
+  <router-outlet id="elementTo"> </router-outlet>
 
-  <piepagina-piepagina>  </piepagina-piepagina>
+  <piepagina-piepagina >  </piepagina-piepagina>
 
 </div>
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
 </body>
 </html>
 

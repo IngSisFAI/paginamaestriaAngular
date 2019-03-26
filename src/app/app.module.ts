@@ -10,6 +10,7 @@ import {crono} from './cronograma/cronograma.component';
 import {pie} from './piepagina/piepagina.component';
 import {titulo} from './titulo/titulo.component';
 import {formu2} from './formularionuevo/formu.component';
+import {arancel} from './aranceles/arancel.component';
 import {FormsModule} from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
@@ -19,7 +20,7 @@ import { MessageService } from './services/message.service';
 @NgModule({
   declarations: [
     AppComponent,
-    fondo, infoG, requisitos, crono, pie, formu2, titulo
+    fondo, infoG, requisitos, crono, pie, formu2, titulo, arancel
   ],
   imports: [
     BrowserModule,

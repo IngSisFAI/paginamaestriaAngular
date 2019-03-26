@@ -8,6 +8,7 @@ import {config} from '../config';
 })
 
 export class fondo {
+  public titulo: string;
   public titulo1: string;
   public titulo2: string
   public fotoRuta: string;
@@ -17,8 +18,9 @@ export class fondo {
 
   constructor() {
     this.fotoRuta = config.rutaFotos;
-    this.titulo1 = 'Facultad de Informática';
-    this.titulo2 = 'UNIVERSIDAD NACIONAL DEL COMAHUE'
+    this.titulo2 = 'Facultad de Informática';
+    this.titulo1 = 'Maestría en Ciencias de la Computación';
+    this.titulo = 'UNIVERSIDAD NACIONAL DEL COMAHUE'
     this.logounco = 'logounco.png';
     this.logofai = 'logofaisinfondo.png';
     this.fotounco = 'fotofacu.png';

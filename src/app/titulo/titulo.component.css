@@ -1,6 +1,8 @@
+body{
+  background-color:  #f2f2f2;
+}
 .fondotitulo{
-  background-color: #f2f2f2;
-  height: 1250px;
+  background-color:  #f2f2f2;
 }
 
 .bigicon {
@@ -16,6 +18,12 @@
   color: white;
 }
 
+.logo-small {
+  color: blue;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 .tit2{
   margin-left: 0px;
   margin-top: 30px;
@@ -23,10 +31,9 @@
   font-size: 42px;
   color: rgb(0, 0, 0);
   font-family: Norasi, sans-serif;
-  text-decoration: underline;
 }
 
-.txt1, .txt3{
+.txt1{
   font-family: Norasi, sans-serif;
   margin-left: 30px;
   margin-right: 20px;
@@ -34,18 +41,15 @@
   color: rgb(0, 0, 0);
   font-size:20px;
 }
-.txt3{
-  font-size: 19px;
-}
+
 
 .ctn{
   transform: scale(0.92);
-  top: 25px;
-  bottom: 85px;
-  width: 340px;
-  height: 400px;
+  margin-top: 0px;
+  width: 320px;
+  height: 390px;
   margin-left: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .ctn2{
   background-color:  rgb(246, 247, 234);
@@ -84,6 +88,7 @@ h1 {
     height: 2750px;
   }
 }
+/* intentando el responsive con css */
 /*
 @media only screen and (max-width: 600px) {
   .contenedordeformu{

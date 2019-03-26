@@ -21,9 +21,11 @@ export class infoG {
   public texto6: string;
   public subtitulo6: string;
   public texto7: string;
+  public subtitulo7: string;
+  public texto8: string;
   constructor(){
 
-    this.subtitulo1 = '¿Qué título expide?';
+    this.subtitulo1 = 'Información';
     this.texto2 = 'La carrera de Maestría en Ciencias de la Computación conduce al otorgamiento del\n' +
       'título de Magíster en Ciencias de la Computación. ';
     this.subtitulo2 = '¿QUÉ OBJETIVOS TIENE?';
@@ -33,19 +35,27 @@ export class infoG {
     this.texto4 =  'El carácter de la Maestría en Ciencias de la Computación es amplio y no está limitado\n' +
       'al marco de un área de la Informática en particular. Tendrá como orientaciones iniciales aquellas que derivan de las áreas específicas de la disciplina Informática según la Resolución Ministerial nº 786/09: Teoría de la Computación; Arquitectura, Sistemas Operativos y Redes; Ingeniería de Software, Bases de Datos y Sistemas de Información; y Algoritmos y Lenguajes.';
     this.subtitulo4 = '¿CÓMO SE ORGANIZA?';
-    this.texto5 = 'La Maestría en Ciencias de la Computación comprende las actividades académicas\n' +
-      'necesarias para la realización de un trabajo de investigación y/o desarrollo conducente a la\n' +
-      'concreción de una Tesis de Maestría, con apego a un Plan de Trabajo de Tesis bajo supervisión, más un Plan de Formación.';
+    this.texto5 = 'La Maestría en Ciencias de la Computación es una carrera de posgrado personalizada,\n' +
+        'de acuerdo con los términos de la  Ordenanza CS N° 510/11, artículo 21, que determina las pautas\n' +
+        'de los planes de estudio personalizados en esta Universidad. Comprende las actividades académicas\n' +
+        'necesarias para la realización de un trabajo de investigación y/o desarrollo conducente a la\n' +
+        'concreción de una Tesis de Maestría, con apego a un Plan de Trabajo de Tesis bajo supervisión, más un Plan de Formación.';
     this.subtitulo5 = '¿CUÁNTO DURA?';
     this.texto6 = 'El plazo estipulado para la realización de las actividades tendientes a obtener el\n' +
       'Grado Académico de Magíster no podrá ser menor a dos (2) años ni mayor a cinco (5) años, a\n' +
       'partir de la fecha de inscripción.\n' +
-      '\n' +
       'Cada estudiante deberá cursar las materias especificadas en su Plan de Formación en\n' +
       'un lapso máximo de tres semestres, a partir de su ingreso a la Maestría en Ciencias de la\n' +
       'Computación.';
     this.subtitulo6 = '¿PUEDO REALIZAR CURSOS DE POSGRADO SIN ESTAR INSCRIPTO?';
-    this.texto7 = 'Cualquier persona que cumpla los requisitos de admisión se podrá inscribir a los cursos individuales sin estar inscripto en la carrera. Para esto se debe completar el formulario de "Solicitar Informacion" especificando la intencion de inscribirse an alguno de los cursos detallado en el plan de estudios.';
+    this.texto7 = 'Cualquier persona que cumpla los requisitos de admisión se podrá inscribir a los cursos\n' +
+        'individuales sin estar inscripto en la carrera. Para esto se debe completar el formulario de \n' +
+        'Solicitar Informacion" especificando la intencion de inscribirse an alguno de los cursos detallado en el plan de estudios.';
+    this.subtitulo7 = '¿Qué título expide?';
+    this.texto8 = 'La carrera de Maestría en Ciencias de la Computación conduce al otorgamiento \n' + '' +
+        'del título de Magíster en Ciencias de la Computación. Certifica la destreza en el manejo \n' + '' +
+        'conceptual y metodológico, correspondiente al estado actual del conocimiento en la disciplina del caso, \n' + '' +
+        'según lo determina la Resolución N° 1168/97 del Ministerio de Cultura y Educación de la Nación.';
   }
 
 }

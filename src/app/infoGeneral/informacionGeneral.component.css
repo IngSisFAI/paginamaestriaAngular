@@ -9,7 +9,7 @@
 }
 
 .tituloinfo{
-  background-color: #2586d7;
+  background-color: #2d3246;
 }
 .tituloinfo2{
   font-size: 30px;
@@ -22,6 +22,10 @@
 .logo-small {
   color: blue;
   font-size: 40px;
+}
+.logo-small2 {
+  color: blue;
+  font-size: 50px;
 }
 
 .todo{

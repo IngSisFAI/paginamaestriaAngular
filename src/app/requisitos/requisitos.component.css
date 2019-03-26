@@ -1,13 +1,11 @@
-.all{  font-size: 27px;
-  background-color:  #f2f2f2;
-}
-.all2{
-  margin-bottom: 340px;
-  background-color:  #f2f2f2;
+.all {
+  font-size: 27px;
+  background-color: #f2f2f2;
 }
 
 .titulorequi{
-  background-color: #2586d7;
+  background-color: #2d3246;
+  margin-bottom: 40px;
 }
 .titulorequi2{
   font-size: 30px;
@@ -32,7 +30,7 @@
 }
 .info{
   font-family: Norasi, sans-serif;
-  font-size: 18px
+  font-size: 19px
 }
 .cupo{
   margin-right: 50px;
@@ -52,15 +50,19 @@
   margin-bottom: 20px;
   color: rgb(22, 120, 197);
 }
+
+#boton, #boton2{
+  background-color: blue;
+}
 #boton:hover {
   font-family: Norasi, sans-serif;
   background: rgba(0,0,0,0);
   color: black;
-  box-shadow: inset 0 0 0 3px red;
+  box-shadow: inset 0 0 0 3px blue;
 }
 #boton2:hover {
   font-family: Norasi, sans-serif;
   background: rgba(0,0,0,0);
   color: black;
-  box-shadow: inset 0 0 0 3px red;
+  box-shadow: inset 0 0 0 3px blue;
 }

@@ -6,7 +6,7 @@
 
 }
 .titulocrono{
-  background-color: #2586d7;
+  background-color: #2d3246;
 }
 .titulocrono2{
   font-size: 30px;
@@ -24,6 +24,12 @@
   text-decoration: underline;
   font-family: Norasi, sans-serif;
 }
+
+.txt1{
+  font-family: Norasi, sans-serif;
+  font-size: 20px;
+}
+
 .tabla{
 background-color: lightgray;
   font-family: Norasi, sans-serif;
@@ -31,7 +37,8 @@ background-color: lightgray;
 }
 
 .linkdescarga{
-  font-size: 18px;
+  font-size: 19px;
+  font-family: Norasi, sans-serif;
 }
 /*
 @media screen and (max-width: 600px){

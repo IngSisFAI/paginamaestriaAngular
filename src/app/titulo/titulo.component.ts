@@ -13,12 +13,6 @@ import swal from 'sweetalert';
 export class titulo {
 
   public titulo2: string;
-  public texto: string;
-  public texto2: string
-  public texto3: string;
-  public texto4: string;
-  public texto5: string;
-  public texto6: string;
   public fotoRuta: string;
   public logounco: string;
   public logofai: string;
@@ -36,11 +30,12 @@ export class titulo {
     this.link4  = 'Resolución Ministerial Nº 786/09';
     this.titulo2 = 'Maestría en Ciencias de la Computación';
     this.logounco = 'logounco.png';
-    this.logofai = 'logofaisinfondo.png';
+    this.logofai = 'favicon.png';
     this.fotounco = 'fotofacu.png';
 
   }
 
+  /* mensaje de enviado con exito el formulario */
   contactForm(form) {
     this._MessageService.sendMessage(form).subscribe(() => {
     });
@@ -53,6 +48,7 @@ export class titulo {
       this.resetear(form);
     }
   }
+  /* intento de reset de formulario pero no resulto */
   resetear(form) {
     form.reset();
   }

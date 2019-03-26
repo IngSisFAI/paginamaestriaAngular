@@ -46,6 +46,7 @@ export class requisitos {
     this.mostrarInfo2 = false;
 
   }
+  /* botones que muestran informacion si se les hace clic */
   cambiarBoolean() {
     if (this.mostrarInfo == true) {
       this.mostrarInfo = false;

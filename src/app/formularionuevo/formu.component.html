@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
 <body>
+<!--
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+-->
 <header class="style-3 ">
 
   <div class="page-title tituloformulario">
-    <div class="container clearfix ">
+    <div class="container clearfix">
       <div class="sixteen columns">
         <h1 class="tituloinscripcion" align="center">Formulario de pre inscripción</h1>
       </div>
@@ -189,7 +191,7 @@
               </div>
             </div>
 
-            <!-- captcha -->
+            <!-- intento de captcha junto con nodejs-->
 
             <div class="form-group">
               <div class="g-recaptcha" data-sitekey="6LfAPJEUAAAAABEInWn9KvjgWqSi20GdmAzbQ42I"></div>
@@ -211,6 +213,7 @@
   </div>
 </div>
 
+<!-- la idea de esto era que no dejara enviar el formulario si no estaba el captcha verificado y el formulario completo -->
 <script>
   document.getElementById('formulario').addEventListener('submit', submitForm);
 
