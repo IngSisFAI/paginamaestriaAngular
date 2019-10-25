@@ -3,7 +3,7 @@ export const config = {
   rutaInfo: 'src/app/piepagina/piepagina.component.html',
   rutaInscrip: 'src/app/requisitos/requisitos.component.html',
   rutaCrono: 'src/app/cronograma/cronograma.component.html',
-  url2: 'http://localhost:3000/',
-  url: 'http://maestriacc.fi.uncoma.edu.ar:3000/'
+  url: 'http://localhost:3000/',
+  url2: 'http://maestriacc.fi.uncoma.edu.ar:3004/'
 };
 

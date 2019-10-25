@@ -9,6 +9,10 @@ body{
   font-size: 30px;
   color: white;
 }
+.fechas{
+  text-align: center;
+  font-size: 20px;
+}
 .logo{
   margin-top: 15px;
   margin-bottom: 15px;
