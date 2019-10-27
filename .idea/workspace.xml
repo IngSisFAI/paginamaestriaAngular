@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="079c65b0-cb4c-4bbf-9b6e-edfecaa319b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/paginaMaestriaNew/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/paginaMaestriaNew/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/paginaMaestriaNew/main.7046737fbadf55df8777.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/cronograma/cronograma.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cronograma/cronograma.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/formularionuevo/formu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/formularionuevo/formu.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/formularionuevo/formu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/formularionuevo/formu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/message.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/message.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/titulo/titulo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/titulo/titulo.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -27,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/titulo/titulo.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="298">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -36,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/titulo/titulo.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="525">
               <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -45,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/services/message.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -61,16 +55,16 @@
         <entry file="file://$PROJECT_DIR$/src/app/config.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/cronograma/cronograma.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+            <state relative-caret-position="268">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -78,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/formularionuevo/formu.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="163">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -136,9 +130,9 @@
         <option value="$PROJECT_DIR$/src/app/formularionuevo/formu.component.ts" />
         <option value="$PROJECT_DIR$/src/app/titulo/titulo.component.html" />
         <option value="$PROJECT_DIR$/src/app/formularionuevo/formu.component.css" />
+        <option value="$PROJECT_DIR$/src/app/services/message.service.ts" />
         <option value="$PROJECT_DIR$/src/app/formularionuevo/formu.component.html" />
         <option value="$PROJECT_DIR$/src/app/cronograma/cronograma.component.html" />
-        <option value="$PROJECT_DIR$/src/app/services/message.service.ts" />
       </list>
     </option>
   </component>
@@ -152,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,13 +170,19 @@
               <item name="paginamaestriaAngular" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="formularionuevo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="paginamaestriaAngular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="paginamaestriaAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="titulo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,12 +302,15 @@
       <workItem from="1571316240303" duration="407000" />
       <workItem from="1571354156393" duration="1035000" />
       <workItem from="1571500648863" duration="2865000" />
-      <workItem from="1571965312457" duration="2201000" />
+      <workItem from="1571965312457" duration="2650000" />
+      <workItem from="1572006122254" duration="523000" />
+      <workItem from="1572006677937" duration="45000" />
+      <workItem from="1572185898434" duration="442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137776000" />
+    <option name="totallyTimeSpent" value="139269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="684" extended-state="6" />
@@ -599,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/formularionuevo/formu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/formularionuevo/formu.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -615,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/titulo/titulo.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="525">
           <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -623,24 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/cronograma/cronograma.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/titulo/titulo.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/config.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -651,6 +634,27 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/formularionuevo/formu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/titulo/titulo.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/cronograma/cronograma.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
         </state>
       </provider>
     </entry>
