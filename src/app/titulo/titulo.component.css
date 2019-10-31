@@ -88,48 +88,25 @@ h1 {
     height: 2750px;
   }
 }
-/* intentando el responsive con css */
-/*
-@media only screen and (max-width: 600px) {
-  .contenedordeformu{
-    height: 1670px;
-  }
-  .txt3{
-    margin-top: 80px;
-    background-color: #f2f2f2;
-    height: 300px;
-  }
-  .ctn1{
-    transform: scale(0.88);
-    margin-bottom: 30px;
-  }
-  .tit2{
-    font-size: 35px;
-  }
-  .txt1{
-    font-size: 18px;
-  }
+.botonescentrados{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(22, 120, 197);
 }
-*/
-/*
-@media only screen and (max-width: 1000px) {
-  .fondotitulo{
-    height: 1885px;
-  }
-  .contenedordeformu{
-    height: 1670px;
-  }
-  .ctn1{
-    transform: scale(0.9);
-  }
-  .ctn{
-    margin-left: 200px;
-  }
-  .tit2{
-    font-size: 35px;
-  }
-  .txt1, .txt3{
-    font-size: 18px;
-  }
+
+#boton, #boton2{
+  background-color: blue;
 }
-*/
+#boton:hover {
+  font-family: Norasi, sans-serif;
+  background: rgba(0,0,0,0);
+  color: black;
+  box-shadow: inset 0 0 0 3px blue;
+}
+#boton2:hover {
+  font-family: Norasi, sans-serif;
+  background: rgba(0,0,0,0);
+  color: black;
+  box-shadow: inset 0 0 0 3px blue;
+}

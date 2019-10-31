@@ -11,7 +11,7 @@ export class MessageService {
  /* comunicacion con nodejs */
   sendMessage(body) {
     return this._http.post(this.url + 'titulo/formulario', body, {withCredentials: true});
-    return this._http.post(this.url + 'formularionuevo/formulario', body, {withCredentials: true});
+    return this._http.post(this.url + 'formularioIncripcion/formulario', body, {withCredentials: true});
     return this._http.post(this.url + 'subscribe', body, {withCredentials: true});
   }
 }

@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {config} from '../config';
 import {MessageService} from '../services/message.service';
 import swal from 'sweetalert';
-
+import * as $ from 'jquery';
 
 @Component({
   selector: 'titulo-titulo',
@@ -35,6 +35,21 @@ export class titulo {
 
   }
 
+
+  scrollTOElement = (element, offsetParam?, speedParam?) => {
+    const toElement = $(element);
+    const focusElement = $(element);
+    const offset = offsetParam * 1 || 200;
+    const speed = speedParam * 1 || 500;
+    $('html, body').animate({
+      scrollTop: toElement.offset().top + offset
+    }, speed);
+    if (focusElement) {
+      $(focusElement).focus();
+    }
+  }
+
+
   /* mensaje de enviado con exito el formulario */
   contactForm(form) {
     this._MessageService.sendMessage(form).subscribe(() => {
@@ -52,5 +67,6 @@ export class titulo {
   resetear(form) {
     form.reset();
   }
+
 }
 
