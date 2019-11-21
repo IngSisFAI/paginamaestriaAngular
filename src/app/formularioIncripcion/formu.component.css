@@ -2,6 +2,26 @@ body{
   background-color:  #f2f2f2;
 }
 
+.txt1{
+  font-family: Norasi, sans-serif;
+  font-size: 20px;
+  margin-bottom: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 20px;
+  color: black;
+}
+
+.txt2{
+  font-family: Norasi, sans-serif;
+  color: #4633FF;
+  font-size: 30px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
 .tituloformulario{
   background-color: #2d3246;
 }
@@ -11,28 +31,28 @@ body{
 }
 .fechas{
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 .logo{
   margin-top: 15px;
   margin-bottom: 15px;
 }
 .bordeado{
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .container.clearfix > p {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .one-third.column.widget > img {
   float: left;
-  margin-right: 15px;
-  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .one-third.column.widget > p {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .one-third.column.widget > img {
@@ -42,7 +62,7 @@ body{
 }
 
 .one-third.column.widget > p {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .one-third.column.widget > img {
@@ -75,7 +95,7 @@ body{
   margin-top: 10px;
 }
 .dos{
-  margin-top: -7px;
+  margin-top: -50px;
 }
 
 .botonenviar{
