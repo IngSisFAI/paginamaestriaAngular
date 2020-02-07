@@ -20,7 +20,7 @@ export class requisitos {
     this.lista1 = [
         new Requisitos('Profesionales graduados', null),
         new Requisitos(null, 'La inscripción es automática para los profesionales graduados de la disciplina Informática según las carreras reconocidas en la Resolución Ministerial nº 786/09 de la República Argentina (en el caso de la UNComa, Licenciados en Ciencias de la Computación, Licenciados en Sistemas de Información). También se aceptarán graduados en Informática con título equivalente otorgado por universidades extranjeras.'),
-      //  new Requisitos('Planilla de Inscripción',null),
+        new Requisitos('Planilla de Inscripción',null),
         new Requisitos('Curriculum Vitae del postulante (con antecedentes laborales y de estudio)', null),
         new Requisitos('Fotocopia del DNI',null),
         new Requisitos('Fotocopia del título universitario',null),
@@ -33,7 +33,7 @@ export class requisitos {
         new Requisitos('Egresados terciarios ', null),
         new Requisitos(null, 'En el caso de egresados terciarios y/o universitarios con título menor a 4 años de duración o egresados de carreras no afines a Informática, y dilatada experiencia profesional en Informática, se podrá aceptar su inscripción previa evaluación de conocimientos y antecedentes por parte del Director de la Maestría y recomendación explícita del Comité Académico.'),
         new Requisitos('Nota dirigida al Sr. Decano de la Facultad de Informática, solicitando inscripción a la carrera.', null),
-     //   new Requisitos('Planilla de Inscripción', null),
+        new Requisitos('Planilla de Inscripción', null),
         new Requisitos('Curriculum Vitae del postulante (con antecedentes laborales y de estudio)', null),
         new Requisitos('Fotocopia del DNI', null),
         new Requisitos('Fotocopia del título que posean', null),
