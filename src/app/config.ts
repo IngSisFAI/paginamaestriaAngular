@@ -4,6 +4,6 @@ export const config = {
   rutaInscrip: 'src/app/requisitos/requisitos.component.html',
   rutaCrono: 'src/app/cronograma/cronograma.component.html',
  // url: 'http://localhost:3000/',
-  url: 'http://maestriacc.fi.uncoma.edu.ar:3004/'
+  
 };
 

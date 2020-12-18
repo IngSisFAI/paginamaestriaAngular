@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class crono{
-public titulo = 'Plan de estudios';
+public titulo = 'Cronograma Cursos';
 public activ1 = 'ACTIVIDADES OBLIGATORIAS MARZO 2019:';
 public activ2 = 'ACTIVIDADES OBLIGATORIAS JULIO 2019 (para inscriptos en segundo semestre):';
 public txt1 = 'Curso Metodología de la Investigación  (Dra. Gabriela Aranda)\n' +

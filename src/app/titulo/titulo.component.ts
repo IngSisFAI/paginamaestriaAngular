@@ -24,7 +24,7 @@ export class titulo {
 
   constructor(public _MessageService: MessageService) {
     this.fotoRuta = config.rutaFotos;
-    this.link1 = 'Ordenanza 890/1 CS UNComa';
+    this.link1 = 'Ordenanza 890/17 CS UNComa';
     this.link2 = 'Resolución N° 1168/97';
     this.link3 = 'Ordenanza CS N° 510/11';
     this.link4  = 'Resolución Ministerial Nº 786/09';
